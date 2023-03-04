@@ -1,0 +1,4 @@
+tenbagger.app {
+  basicauth /laojoe Goodpass1234!
+  reverse_proxy app:3002
+}

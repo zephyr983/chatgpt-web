@@ -24,9 +24,9 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
   if (process.env.OPENAI_API_KEY) {
     const options: ChatGPTAPIOptions = {
       apiKey: process.env.OPENAI_API_KEY,
-      debug: false,
+      debug: true,
     }
-
+    
     if (process.env.OPENAI_API_BASE_URL && process.env.OPENAI_API_BASE_URL.trim().length > 0)
       options.apiBaseUrl = process.env.OPENAI_API_BASE_URL
 
